@@ -1,0 +1,25 @@
+Jira Setup Guide:
+
+1. Create a Jira Project
+  A.Log into Jira Cloud.
+  B.Click Create Project → Select Kanban template.
+  C.Set the project name to IT-Helpdesk-Ticketing-System.
+
+2. Configure Issue Types
+  A. Navigate to Project Settings → Issue Types.
+  Ensure the following exist:
+    . Task
+    . Incident
+    . Service Request
+3. Create a Test Task
+  A. Click Create.
+  B. Fill in:
+    . Project: IT-Helpdesk-Ticketing-System
+    . Issue Type: Task
+    . Summary: "User unable to connect to VPN"
+    . Description: "User reports VPN connection fails with error XYZ."
+    . Assignee: Yourself
+  C. Click Create.
+
+4. Verify
+    . Navigate to Issues and confirm the task appears.

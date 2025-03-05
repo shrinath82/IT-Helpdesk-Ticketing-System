@@ -1,0 +1,36 @@
+API Integration: ServiceNow ↔ Jira:
+
+1. Enable API Access in ServiceNow
+   1. Navigate to System Web Services → REST API Explorer.
+   2. Select Table API.
+   3. Choose the table: x_1631954_test_shri_company.
+   4. Test a GET request:
+      https://your-instance.service-now.com/api/now/table/x_1631954_test_shri_company
+
+2. Generate API Token for Jira
+   1. Visit Jira API Tokens.
+   2. Click Create API token → Copy it.
+
+3. Test API in Postman
+ . Jira API Test (GET Projects):
+   https://shrinath82.atlassian.net/rest/api/3/project
+ . ServiceNow API Test (GET Records):
+   https://your-instance.service-now.com/api/now/table/x_1631954_test_shri_company
+
+4. Automate Ticket Sync (Jira → ServiceNow)
+   1. Create a Jira Issue via API:
+
+{
+    "fields": {
+        "project": {"key": "KAN"},
+        "summary": "Test Issue from API",
+        "description": "This issue was created using Jira REST API",
+        "issuetype": {"name": "Task"}
+    }
+}
+
+   2. Validate responses and sync updates.
+
+5. Next Steps
+ . Automate status updates between Jira and ServiceNow.
+ . Develop a script for end-to-end integration.

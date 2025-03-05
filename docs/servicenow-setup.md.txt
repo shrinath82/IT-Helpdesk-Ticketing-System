@@ -1,0 +1,25 @@
+ServiceNow Setup Guide:
+
+1. Create a ServiceNow Developer Instance
+  1. Sign up at ServiceNow Developer Portal.
+  2. Create a Personal Developer Instance.
+  3. Elevate admin rights in your profile.
+
+2. Create a Custom Table
+  1. Navigate to System Definition → Tables.
+  2. Click New.
+  3. Configure:
+     . Label: IT Helpdesk Requests
+     . Name: x_1345654_first_my_company
+     . Extends Table: Task
+  4. Save and open the table.
+  5. Add columns for ticket details (e.g., Summary, Status).
+
+3. Configure Access Control (ACLs)
+  1. Go to System Security → ACL → New.
+  2. Set:
+     . Type: Record
+     . Operation: Read
+     . Name: x_1345654_first_my_company
+     . Requires Role: itil
+  3. Submit and assign admin roles.
