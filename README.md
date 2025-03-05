@@ -15,4 +15,4 @@ Installation & Usage:
  . git clone https://github.com/shrinath82/resources-flow.git
 
 Follow the steps in the respective markdown files under docs/.
-
+Refer "resources-flow.png" for the project flow
