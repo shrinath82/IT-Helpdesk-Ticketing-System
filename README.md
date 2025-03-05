@@ -20,17 +20,6 @@ resources-flow/
 │   │── servicenow-table.png
 │   │── postman-api-test.png
 
-Steps Covered:
-
-Git & GitHub Setup
-Jira Project Setup
-ServiceNow Table Creation
-API Integration (ServiceNow ↔ Jira)
-
-Installation & Usage
-
 Clone this repository:
-
 git clone https://github.com/shrinath82/resources-flow.git
-
 Follow the steps in the respective markdown files under docs/.
